@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="Hexo"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Hexo"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://yoursite.comundefined"/>
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>Hexo</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Untitled Post</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/levblanc">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:levblanc@163.com">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By John Doe</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2017-02-26</span>
+            <span class="time">18:19:57</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h2 id="global"><a href="#global" class="headerlink" title="global"></a>global</h2><ul>
+<li>process<ul>
+<li>nextTick 下一队列（当前队列的底部）</li>
+<li>process.pid 进程的id</li>
+<li>process.kill() 杀死进程</li>
+<li>process.cwd() 当前工作目录（__dirname不可以更改的）</li>
+<li>process.exit() 退出进程</li>
+</ul>
+</li>
+<li>Buffer</li>
+<li>setTimeout / clearTimeout</li>
+<li>setInterval / clearInterval</li>
+<li>setImmediate / clearImmediate</li>
+<li>console<ul>
+<li>console.log/error/info/warn/time/timeEnd</li>
+</ul>
+</li>
+</ul>
+<h2 id="dirname-filename"><a href="#dirname-filename" class="headerlink" title="dirname/filename"></a><strong>dirname/</strong>filename</h2><h2 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h2><ul>
+<li>cmd(seajs)就近依赖  amd(requirejs) 依赖前置 </li>
+<li>commonjs (node) 读写文件io操作 </li>
+<li>有利于分工协作，</li>
+<li>高内聚，低耦合</li>
+<li>实现代码复用</li>
+</ul>
+<blockquote>
+<p>闭包，命名空间(不可能完全避免命名冲突，调用过长)</p>
+</blockquote>
+<h2 id="模块化-1"><a href="#模块化-1" class="headerlink" title="模块化"></a>模块化</h2><ul>
+<li>定义模块（创建一个js文件）</li>
+<li>使用模块（require）</li>
+<li>导出模块（exports / module.exports）</li>
+</ul>
+<h2 id="文件模块"><a href="#文件模块" class="headerlink" title="文件模块"></a>文件模块</h2><ul>
+<li>引用方式要通过相对路径引用</li>
+<li>引用多次 只执行一次</li>
+</ul>
+<h2 id="第三方模块"><a href="#第三方模块" class="headerlink" title="第三方模块"></a>第三方模块</h2><ul>
+<li>npm管理后台文件的 管理前端文件bower</li>
+<li>别人的模块 npm </li>
+<li><p>下载文件通过npm</p>
+<ul>
+<li><p>全局下载(只在命令下使用)</p>
+<ul>
+<li><p>nrm工具(切换源的)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install nrm -g</div></pre></td></tr></table></figure>
+</li>
+<li><p>添加一个源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm add zf1 http://172.18.1.139</div></pre></td></tr></table></figure>
+</li>
+<li><p>展示所有源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm ls</div></pre></td></tr></table></figure>
+</li>
+<li><p>测试源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm test</div></pre></td></tr></table></figure>
+</li>
+<li><p>切换源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm use taobao</div></pre></td></tr></table></figure>
+</li>
+<li><p>nodeppt</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install nodeppt -g</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>本地下载(在代码里使用)</p>
+<ul>
+<li><p>记录安装过的所有模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm init(记录所有的依赖关系) -y默认确定</div></pre></td></tr></table></figure>
+</li>
+<li><p>依赖(开发上线都需要)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install jquery@2.1.0 --save  缩写(-S)</div></pre></td></tr></table></figure>
+</li>
+<li><p>开发依赖(只在开发使用)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install gulp --save-dev  缩写(-D)</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>卸载模块</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm uninstall nodeppt -g</div><div class="line">npm uninstall jquery --save</div><div class="line">npm uninstall gulp --save-dev</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm info jquery</div></pre></td></tr></table></figure>
+<blockquote>
+<p>默认安装到node_modules文件夹下,不指定版本默认为最新版本</p>
+</blockquote>
+<h2 id="模块的查找"><a href="#模块的查找" class="headerlink" title="模块的查找"></a>模块的查找</h2><p>先查找当前目录下node_modules文件，找到名字相同的文件夹，找到package.json看里面的main，运行main对应的文件，找不到会像上级查找node_modules文件，直到找到为止（根目录），找不到则报错 （如果找不到 会默认找index.js）</p>
+<h2 id="bower"><a href="#bower" class="headerlink" title="bower"></a>bower</h2><ul>
+<li><p>先安装bower </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g bower</div></pre></td></tr></table></figure>
+</li>
+<li><p>初始化bower.json</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bower init</div></pre></td></tr></table></figure>
+</li>
+<li><p>下载插件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bower install jquery --save</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>默认安装到bower_components文件夹下</p>
+</blockquote>
+<h2 id="bower可以指定目录安装"><a href="#bower可以指定目录安装" class="headerlink" title="bower可以指定目录安装"></a>bower可以指定目录安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">touch .bowerrc</div><div class="line">&#123;&quot;directory&quot;:&quot;lib/public/js&quot;&#125;</div></pre></td></tr></table></figure>
+<h2 id="发包"><a href="#发包" class="headerlink" title="发包"></a>发包</h2><ul>
+<li>找到带有package.json的文件夹</li>
+<li><p>切到官方npm上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm use npm</div></pre></td></tr></table></figure>
+</li>
+<li><p>登录账号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm addUser</div></pre></td></tr></table></figure>
+</li>
+<li><p>发布</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm publish</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="核心模块-内置模块"><a href="#核心模块-内置模块" class="headerlink" title="核心模块/内置模块"></a>核心模块/内置模块</h2><ul>
+<li>node自带的模块，不需要安装，可以直接使用</li>
+<li>util工具模块</li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
